@@ -24,6 +24,8 @@ public class Rectangle : GeometricShape
         Width = width;
     }
 
+    public Rectangle() { }
+
     public override double CountSquare() =>
         Height * Width;
 }

@@ -24,6 +24,8 @@ public class Triangle : GeometricShape
         Footing = footing;
     }
 
+    public Triangle() { }
+
     public override double CountSquare() =>
         Height * Footing / 2;
 }

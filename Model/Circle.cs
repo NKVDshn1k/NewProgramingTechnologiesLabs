@@ -15,6 +15,8 @@ public class Circle : GeometricShape
         Radius = radius;
     }
 
+    public Circle() { }
+
     public override double CountSquare() =>
         2 * Math.Pow(Radius, 2) * Math.PI;
 }
