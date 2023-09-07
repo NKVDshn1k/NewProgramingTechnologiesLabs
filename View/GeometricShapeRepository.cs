@@ -5,8 +5,11 @@ namespace View;
 
 internal static class GeometricShapeRepository
 {
+    //Путь к файлу со списком фигур
     private const string _dbPath = "GeometricShape.cringe";
     private static readonly BinaryFormatter _formatter = new BinaryFormatter();
+
+    //Считывает файл с фигурами или возвращает новый список
     public static List<GeometricShape> LoadOrCreate()
     {
         if (!File.Exists(_dbPath))
@@ -18,6 +21,7 @@ internal static class GeometricShapeRepository
         }
     }
 
+    //сохраняет список фигур
     public static void Save(List<GeometricShape> shapes)
     {        
         using (FileStream fs = new FileStream(_dbPath, FileMode.OpenOrCreate))
