@@ -25,4 +25,5 @@ internal static class GeometricShapeRepository
             _formatter.Serialize(fs, shapes);
         }
     }
+    //Я безполезный комментарий
 }
