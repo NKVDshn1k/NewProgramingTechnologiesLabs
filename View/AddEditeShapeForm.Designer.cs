@@ -1,6 +1,6 @@
 ﻿namespace View
 {
-    partial class AddShapeForm
+    partial class AddEditeShapeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,36 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Size1_Label = new Label();
-            Size2_Label = new Label();
             Type_ComboBox = new ComboBox();
             label3 = new Label();
             Cancel_Button = new Button();
             Confirm_Button = new Button();
-            Size1_Numeric = new NumericUpDown();
-            Size2_Numeric = new NumericUpDown();
-            CreateRandomData = new Button();
-            ((System.ComponentModel.ISupportInitialize)Size1_Numeric).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Size2_Numeric).BeginInit();
+            ShapeControlPanel = new Panel();
             SuspendLayout();
-            // 
-            // Size1_Label
-            // 
-            Size1_Label.AutoSize = true;
-            Size1_Label.Location = new Point(51, 55);
-            Size1_Label.Name = "Size1_Label";
-            Size1_Label.Size = new Size(38, 15);
-            Size1_Label.TabIndex = 0;
-            Size1_Label.Text = "label1";
-            // 
-            // Size2_Label
-            // 
-            Size2_Label.AutoSize = true;
-            Size2_Label.Location = new Point(51, 88);
-            Size2_Label.Name = "Size2_Label";
-            Size2_Label.Size = new Size(38, 15);
-            Size2_Label.TabIndex = 1;
-            Size2_Label.Text = "label2";
             // 
             // Type_ComboBox
             // 
@@ -97,63 +73,35 @@
             Confirm_Button.UseVisualStyleBackColor = true;
             Confirm_Button.Click += Confirm_Button_Click;
             // 
-            // Size1_Numeric
+            // ShapeControlPanel
             // 
-            Size1_Numeric.Location = new Point(111, 53);
-            Size1_Numeric.Name = "Size1_Numeric";
-            Size1_Numeric.Size = new Size(60, 23);
-            Size1_Numeric.TabIndex = 8;
+            ShapeControlPanel.Location = new Point(30, 44);
+            ShapeControlPanel.Name = "ShapeControlPanel";
+            ShapeControlPanel.Size = new Size(166, 97);
+            ShapeControlPanel.TabIndex = 11;
             // 
-            // Size2_Numeric
-            // 
-            Size2_Numeric.Location = new Point(111, 86);
-            Size2_Numeric.Name = "Size2_Numeric";
-            Size2_Numeric.Size = new Size(60, 23);
-            Size2_Numeric.TabIndex = 9;
-            // 
-            // CreateRandomData
-            // 
-            CreateRandomData.Location = new Point(50, 116);
-            CreateRandomData.Name = "CreateRandomData";
-            CreateRandomData.Size = new Size(121, 23);
-            CreateRandomData.TabIndex = 10;
-            CreateRandomData.Text = "CreateRandomData";
-            CreateRandomData.UseVisualStyleBackColor = true;
-            CreateRandomData.Click += CreateRandomData_Click;
-            // 
-            // AddShapeForm
+            // AddEditeShapeForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(219, 182);
-            Controls.Add(CreateRandomData);
-            Controls.Add(Size2_Numeric);
-            Controls.Add(Size1_Numeric);
+            Controls.Add(ShapeControlPanel);
             Controls.Add(Confirm_Button);
             Controls.Add(Cancel_Button);
             Controls.Add(label3);
             Controls.Add(Type_ComboBox);
-            Controls.Add(Size2_Label);
-            Controls.Add(Size1_Label);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Name = "AddShapeForm";
+            Name = "AddEditeShapeForm";
             Text = "AddShapeForm";
-            ((System.ComponentModel.ISupportInitialize)Size1_Numeric).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Size2_Numeric).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label Size1_Label;
-        private Label Size2_Label;
         private ComboBox Type_ComboBox;
         private Label label3;
         private Button Cancel_Button;
         private Button Confirm_Button;
-        private NumericUpDown Size1_Numeric;
-        private NumericUpDown Size2_Numeric;
-        private Button CreateRandomData;
+        private Panel ShapeControlPanel;
     }
 }

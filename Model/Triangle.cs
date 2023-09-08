@@ -3,7 +3,7 @@
 [Serializable]
 public class Triangle : GeometricShape
 {
-    public double
+    private double
         _height, _footing;
 
     public double Height 
