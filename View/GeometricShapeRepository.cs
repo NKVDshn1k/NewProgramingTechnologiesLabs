@@ -15,10 +15,18 @@ internal static class GeometricShapeRepository
         if (!File.Exists(_dbPath))
             return new List<GeometricShape>();
 
-        using (FileStream fs = new FileStream(_dbPath, FileMode.OpenOrCreate))
+        try
         {
-            return (List<GeometricShape>)_formatter.Deserialize(fs);
+            using (FileStream fs = new FileStream(_dbPath, FileMode.OpenOrCreate))
+            {
+                return (List<GeometricShape>)_formatter.Deserialize(fs);
+            }
         }
+        catch
+        {
+            return new List<GeometricShape>();
+        }
+
     }
 
     //сохраняет список фигур

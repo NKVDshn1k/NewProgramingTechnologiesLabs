@@ -31,6 +31,7 @@ public partial class SearchForm : Form
 
     private void Reload()
     {
+        Shapes_DataGridView.Rows.Clear();
         foreach (var item in _items)
             Add(item);
     }

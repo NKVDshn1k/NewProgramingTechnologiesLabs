@@ -35,8 +35,12 @@ namespace View
 
 
 
-        private void RemoveShape_Button_Click(object sender, EventArgs e) =>
+        private void RemoveShape_Button_Click(object sender, EventArgs e)
+        {
+            if (Shapes_DataGridView.SelectedRows.Count == 0)
+                return;
             Shapes_DataGridView.Rows.RemoveAt(SelectedIndex);
+        }
 
         private void AddShape_Button_Click(object sender, EventArgs e)
         {
@@ -45,8 +49,8 @@ namespace View
             if (addForm.ShowDialog() != DialogResult.OK)
                 return;
 
-            Add(addForm.ToAdd);
             _items.Add(addForm.ToAdd);
+            Add(addForm.ToAdd);
         }
 
         private void Search_Button_Click(object sender, EventArgs e) =>
@@ -59,12 +63,17 @@ namespace View
 
         private void Shapes_DataGridView_SelectionChanged(object sender, EventArgs e)
         {
-            int i = Shapes_DataGridView.SelectedRows[0].Index;
-            _shapeControl.Object = _items[i];
+            if (Shapes_DataGridView.SelectedRows.Count == 0)
+                return;
+
+            _shapeControl.Object = _items[SelectedIndex];
         }
 
         private void EditeShapeButton_Click(object sender, EventArgs e)
         {
+            if (Shapes_DataGridView.SelectedRows.Count == 0)
+                return;
+
             var editeForm = new AddEditeShapeForm(_items[SelectedIndex]);
 
             if (editeForm.ShowDialog() != DialogResult.OK)
