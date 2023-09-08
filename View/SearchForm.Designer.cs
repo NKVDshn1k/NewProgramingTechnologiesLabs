@@ -33,7 +33,7 @@
             Square = new DataGridViewTextBoxColumn();
             Type_ComboBox = new ComboBox();
             Square_Numeric = new NumericUpDown();
-            this.Search_Button = new Button();
+            Search_Button = new Button();
             Type_CheckBox = new CheckBox();
             Square_CheckBox = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)Shapes_DataGridView).BeginInit();
@@ -78,6 +78,7 @@
             // 
             // Square_Numeric
             // 
+            Square_Numeric.DecimalPlaces = 2;
             Square_Numeric.Location = new Point(156, 27);
             Square_Numeric.Name = "Square_Numeric";
             Square_Numeric.Size = new Size(95, 23);
@@ -85,13 +86,13 @@
             // 
             // Search_Button
             // 
-            this.Search_Button.Location = new Point(257, 26);
-            this.Search_Button.Name = "Search_Button";
-            this.Search_Button.Size = new Size(59, 24);
-            this.Search_Button.TabIndex = 7;
-            this.Search_Button.Text = "Search";
-            this.Search_Button.UseVisualStyleBackColor = true;
-            this.Search_Button.Click += this.Search_Button_Click;
+            Search_Button.Location = new Point(257, 26);
+            Search_Button.Name = "Search_Button";
+            Search_Button.Size = new Size(59, 24);
+            Search_Button.TabIndex = 7;
+            Search_Button.Text = "Search";
+            Search_Button.UseVisualStyleBackColor = true;
+            Search_Button.Click += Search_Button_Click;
             // 
             // Type_CheckBox
             // 
@@ -120,7 +121,7 @@
             ClientSize = new Size(328, 441);
             Controls.Add(Square_CheckBox);
             Controls.Add(Type_CheckBox);
-            Controls.Add(this.Search_Button);
+            Controls.Add(Search_Button);
             Controls.Add(Square_Numeric);
             Controls.Add(Type_ComboBox);
             Controls.Add(Shapes_DataGridView);
