@@ -28,4 +28,12 @@ public class Rectangle : GeometricShape
 
     public override double CountSquare() =>
         Height * Width;
+
+    public override void SetFromConsole()
+    {
+        Console.Write(TypeName + "\nHeight = ");
+        Height = ReadDouble();
+        Console.Write("Width = ");
+        Width = ReadDouble();
+    }
 }

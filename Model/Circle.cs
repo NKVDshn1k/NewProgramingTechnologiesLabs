@@ -19,4 +19,10 @@ public class Circle : GeometricShape
 
     public override double CountSquare() =>
         2 * Math.Pow(Radius, 2) * Math.PI;
+
+    public override void SetFromConsole()
+    {
+        Console.Write(TypeName + "\nRadius = ");
+        Radius = ReadDouble();
+    }
 }

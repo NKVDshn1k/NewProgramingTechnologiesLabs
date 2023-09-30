@@ -28,4 +28,12 @@ public class Triangle : GeometricShape
 
     public override double CountSquare() =>
         Height * Footing / 2;
+
+    public override void SetFromConsole()
+    {
+        Console.Write(TypeName + "\nHeight = ");
+        Height = ReadDouble();
+        Console.Write("Footing = ");
+        Footing = ReadDouble();
+    }
 }

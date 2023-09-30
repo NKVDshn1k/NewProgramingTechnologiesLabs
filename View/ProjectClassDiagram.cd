@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Model.Circle">
+    <Position X="0.5" Y="3" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Model.GeometricShape">
+    <Position X="2.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Model.Rectangle">
+    <Position X="2.75" Y="3" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Model.Triangle">
+    <Position X="5" Y="3" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="View.GeometricShapeRepository">
+    <Position X="0.75" Y="5.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAAQA=</HashCode>
+      <FileName>GeometricShapeRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="View.AddEditeShapeForm">
+    <Position X="3.25" Y="5.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>BAAgACAAACAAEBQAAACAAhACAAAAASgAAIAAAAAAAQA=</HashCode>
+      <FileName>AddEditeShapeForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="View.SearchForm">
+    <Position X="6.25" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAIAAABAQCAIQAAAAASAABAKABAAAQAACQAggAAAAAA=</HashCode>
+      <FileName>SearchForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="View.ShapeControl">
+    <Position X="11" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAiAACQQwgACAAAACAAABAAEAAIAAAAAAQAI=</HashCode>
+      <FileName>ShapeControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="View.ShapesForm">
+    <Position X="8" Y="5.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>BAIAAAAARCAAACAABACAAggKABABAAAABaAggAIBAAA=</HashCode>
+      <FileName>ShapesForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
